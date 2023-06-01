@@ -46,5 +46,20 @@
 		<PackageReference Include="DevExpress.Maui.Scheduler" Version="22.2.6" />
 		<PackageReference Include="DevExpress.Maui.Editors" Version="22.2.6" />
 		<TrimmableAssembly Include="DevExpress.Data.v22.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\HomePage.xaml.cs">
+	    <DependentUpon>HomePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Views\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>	
 </Project>

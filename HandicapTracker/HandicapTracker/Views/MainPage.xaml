@@ -11,6 +11,9 @@
        x:Class="HandicapTracker.Views.MainPage">
     <MenuItem Text="Close" IconImageSource="close" Clicked="OnCloseClicked"/>
 
+    <ShellContent Title="Home" Icon="home"
+                  ContentTemplate="{DataTemplate local:HomePage}" />
+
     <ShellContent Title="About" Icon="about"
                   ContentTemplate="{DataTemplate local:AboutPage}"
                   Route="HandicapTracker.Views.AboutPage"/>
