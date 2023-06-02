@@ -1,11 +1,13 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 
-namespace HandicapTracker.Views.ViewModels
+namespace HandicapTracker.ViewModels
 {
-    public partial class HomePageViewModel : BaseViewModel
+    public class HomePageViewModel : BaseViewModel
     {
-        
+        public const string ViewName = "HomePage";
+        public HomePageViewModel()
+        {
+            Title = "Home";
+        }
     }
 }

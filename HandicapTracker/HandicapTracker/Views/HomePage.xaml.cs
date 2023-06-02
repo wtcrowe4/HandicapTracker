@@ -1,11 +1,11 @@
-﻿using HandicapTracker.Views.ViewModels;
+﻿using HandicapTracker.ViewModels;
 
-namespace HandicapTracker.Views.Views
+namespace HandicapTracker.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePagePage : ContentPage
+    public partial class HomePage: ContentPage
     {
-        public HomePagePage()
+        public HomePage()
         {
             InitializeComponent();
             BindingContext = new HomePageViewModel();

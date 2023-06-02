@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
-    x:Class="HandicapTracker.Views.Views.HomePagePage"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:vm="clr-namespace:HandicapTracker.Views.ViewModels"
-    xmlns:local="clr-namespace:HandicapTracker.Views.Views"
-    x:DataType="vm:HomePageViewModel"
-    mc:Ignorable="d">
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        Title="{Binding Title}"
+        BackgroundColor="{StaticResource NormalBackgroundColor}"
+        xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+        xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+        xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
+        xmlns:dxcv="clr-namespace:DevExpress.Maui.CollectionView;assembly=DevExpress.Maui.CollectionView"
+        xmlns:dxsch="clr-namespace:DevExpress.Maui.Scheduler;assembly=DevExpress.Maui.Scheduler"
+        xmlns:dxg="clr-namespace:DevExpress.Maui.DataGrid;assembly=DevExpress.Maui.DataGrid"
+        xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+        xmlns:dxdf="clr-namespace:DevExpress.Maui.DataForm;assembly=DevExpress.Maui.Editors"
+        xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+        ios:Page.UseSafeArea="true"
+        xmlns:vm="clr-namespace:HandicapTracker.ViewModels"
+        xmlns:local="clr-namespace:HandicapTracker.Views"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:DataType="vm:HomePageViewModel"
+        mc:Ignorable="d"
+        x:Class="HandicapTracker.Views.HomePage">
     <ContentPage.BindingContext>
         <vm:HomePageViewModel />
     </ContentPage.BindingContext>
+
+    
     <ContentPage.Content>
+        
         <StackLayout>
+            <Image Source="background" HorizontalOptions="FillAndExpand" Aspect="Fill"/>
             <Label
                 HorizontalOptions="Center"
-                Text="Welcome to .NET MAUI!!!"
-                TextColor="Purple"
-                VerticalOptions="Center"/>
+                Text="Handicap Tracker"
+                TextColor='Black'
+                VerticalOptions="Center" Margin="0,-125,0,0" FontSize="Title" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+
+
+
+
