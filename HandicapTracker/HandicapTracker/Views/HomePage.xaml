@@ -34,7 +34,7 @@
                 Text="Handicap Tracker"
                 TextColor='Black'
                 VerticalOptions="Center" Margin="0,-125,0,0" FontSize="Title" />
-            <Image Source="golfball" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,-100,0,0" />
+            <!--<Image Source="golfball" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,-100,0,0" />-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
