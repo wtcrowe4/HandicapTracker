@@ -28,12 +28,33 @@
     <ContentPage.Content>
         
         <StackLayout>
-            <Image Source="background" HorizontalOptions="FillAndExpand" Aspect="Fill"/>
+            <Image Source="background" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
             <Label
-                HorizontalOptions="Center"
                 Text="Handicap Tracker"
-                TextColor='Black'
-                VerticalOptions="Center" Margin="0,-125,0,0" FontSize="Title" />
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                Margin="0,-125,0,0" 
+                FontFamily="Univia-Pro" FontSize="30" TextColor="{StaticResource NormalHeaderText}"
+                />
+            <Label 
+                Text="Your current handicap: "
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,200,0,0"
+                FontFamily="Univia-Pro"
+                FontSize="20"
+                TextColor="{StaticResource NormalHeaderText}"
+                />
+            <!--{Binding Handicap}-->
+            <Label
+                Text="2.3"  
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,0"
+                FontFamily="Univia-Pro"
+                FontSize="30"
+                TextColor="{StaticResource NormalHeaderText}"
+                />
             <!--<Image Source="golfball" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,-100,0,0" />-->
         </StackLayout>
     </ContentPage.Content>
