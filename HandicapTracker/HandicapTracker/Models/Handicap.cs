@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HandicapTracker.Models
 {
-    internal class Handicap
+    class Handicap
     {
-        public double Value { get; set; }
+        public double Value { get; set; } = 2.3;
 
         public List<Round> Rounds { get; set; }
 

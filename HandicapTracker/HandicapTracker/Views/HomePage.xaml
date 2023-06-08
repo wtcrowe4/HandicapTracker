@@ -22,8 +22,12 @@
         x:Class="HandicapTracker.Views.HomePage">
     <ContentPage.BindingContext>
         <vm:HomePageViewModel />
+        
     </ContentPage.BindingContext>
 
+    <ContentPage.Resources>
+        <vm:HomePageViewModel x:Key="homePageViewModel"/>
+    </ContentPage.Resources>
     
     <ContentPage.Content>
         
@@ -33,26 +37,27 @@
                 Text="Handicap Tracker"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" 
-                Margin="0,-125,0,0" 
-                FontFamily="Univia-Pro" FontSize="30" TextColor="{StaticResource NormalHeaderText}"
+                Margin="0,-1000,0,0" 
+                FontFamily="Univia-Pro" FontSize="50" TextColor="{StaticResource NormalHeaderText}"
                 />
             <Label 
                 Text="Your current handicap: "
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
-                Margin="0,200,0,0"
-                FontFamily="Univia-Pro"
-                FontSize="20"
-                TextColor="{StaticResource NormalHeaderText}"
-                />
-            <!--{Binding Handicap}-->
-            <Label
-                Text="2.3"  
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                Margin="0,50,0,0"
+                Margin="0,-500,0,0"
                 FontFamily="Univia-Pro"
                 FontSize="30"
+                TextColor="{StaticResource NormalHeaderText}"
+                />
+           
+            <Label
+                x:Name="HandicapLabel"
+                Text="{Binding Handicap}"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,-400,0,0"
+                FontFamily="Univia-Pro"
+                FontSize="50"
                 TextColor="{StaticResource NormalHeaderText}"
                 />
             <!--<Image Source="golfball" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,-100,0,0" />-->
@@ -63,3 +68,5 @@
 
 
 
+<!--BindingContext="{Binding Source={StaticResource homePageViewModel}, Path=Handicap}"
+                Text="{Binding Handicap}"-->
