@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HandicapTracker.Models
 {
-    class Handicap
+    public class Handicap
     {
         public double Value { get; set; } = 2.3;
 
@@ -51,7 +51,7 @@ namespace HandicapTracker.Models
 
     }
 
-    internal class Round
+    public class Round
     {
         public DateTime Date { get; set; }
 
@@ -64,7 +64,7 @@ namespace HandicapTracker.Models
         public double Differential { get; set; }
     }
 
-    internal class Score
+    public class Score
     {
         public int Value { get; set; }
         public int AdjustedValue { get; set; }

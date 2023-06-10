@@ -38,7 +38,7 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center" 
                 Margin="0,-1000,0,0" 
-                FontFamily="Univia-Pro" FontSize="50" TextColor="{StaticResource NormalHeaderText}"
+                FontFamily="Univia-Pro" FontSize="40" TextColor="{StaticResource NormalHeaderText}"
                 />
             <Label 
                 Text="Your current handicap: "
@@ -51,7 +51,6 @@
                 />
            
             <Label
-                x:Name="HandicapLabel"
                 Text="{Binding Handicap}"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
