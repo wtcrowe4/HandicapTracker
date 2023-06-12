@@ -8,7 +8,7 @@ namespace HandicapTracker.Views
         public NewItemPage()
         {
             InitializeComponent();
-            BindingContext = new NewItemViewModel();
+            BindingContext = new InputScoreViewModel();
         }
     }
 }

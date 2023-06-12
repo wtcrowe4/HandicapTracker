@@ -21,8 +21,10 @@
                         <Setter Property="PlaceholderColor" Value="#acacac"/>
                     </Style>
                 </dxdf:DataFormView.Resources>
-                <dxdf:DataFormTextItem InplaceLabelText="Text" FieldName="Text" IsLabelVisible="False" ></dxdf:DataFormTextItem>
-                <dxdf:DataFormTextItem InplaceLabelText="Description" FieldName="Description" IsLabelVisible="False"></dxdf:DataFormTextItem>
-            </dxdf:DataFormView>
+                <dxdf:DataFormNumericItem InplaceLabelText="Score" FieldName="Value" IsLabelVisible="True" ></dxdf:DataFormNumericItem>
+                <dxdf:DataFormDateItem InplaceLabelText="Date" FieldName="Date" IsLabelVisible="True"></dxdf:DataFormDateItem>
+                <dxdf:DataFormNumericItem InplaceLabelText="Course Rating" FieldName="CourseRating" IsLabelVisible="True"></dxdf:DataFormNumericItem>
+                <dxdf:DataFormNumericItem InplaceLabelText="Slope Rating" FieldName="SlopeRating" IsLabelVisible="True"></dxdf:DataFormNumericItem>
+        </dxdf:DataFormView>
     </ContentPage.Content>
 </ContentPage>

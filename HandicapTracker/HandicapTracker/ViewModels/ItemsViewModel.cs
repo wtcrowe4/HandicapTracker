@@ -68,7 +68,7 @@ namespace HandicapTracker.ViewModels
 
         async void OnAddItem(object obj)
         {
-            await Navigation.NavigateToAsync<NewItemViewModel>(null);
+            await Navigation.NavigateToAsync<InputScoreViewModel>(null);
         }
 
         async void OnItemSelected(Item item)

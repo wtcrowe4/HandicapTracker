@@ -55,22 +55,30 @@ namespace HandicapTracker.Models
     {
         public DateTime Date { get; set; }
 
-        public int Score { get; set; }
+        public Score Score { get; set; }
 
-        public int CourseRating { get; set; }
+        public double CourseRating { get; set; }
 
-        public int SlopeRating { get; set; }
+        public double SlopeRating { get; set; }
 
         public double Differential { get; set; }
+
+        public double CalculateDifferential()
+        {
+            return Math.Round(((Score.Value - CourseRating) * 113 / SlopeRating), 1);
+        }
+
     }
 
     public class Score
     {
+        public string Id { get; set; }
         public int Value { get; set; }
-        public int AdjustedValue { get; set; }
+        public DateTime Date { get; set; }
+        public double CourseRating { get; set; }
+        public double SlopeRating { get; set;}
+        public double AdjustedValue => Math.Round((Value - CourseRating) * 113 / SlopeRating, 2);
 
-        public int CourseRating { get; set; }
-        public int SlopeRating { get; set;}
-
+        
     }
 }
