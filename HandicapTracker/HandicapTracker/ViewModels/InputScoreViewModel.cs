@@ -17,7 +17,8 @@ namespace HandicapTracker.ViewModels
         public InputScoreViewModel()
         {
             Title = "Input New Score";
-            SaveCommand = new Command(OnSave, ValidateSave);
+            //SaveCommand = new Command(OnSave, ValidateSave);
+            SaveCommand = new Command(OnSave);
             CancelCommand = new Command(OnCancel);
             PropertyChanged +=
                 (_, __) => SaveCommand.ChangeCanExecute();
@@ -84,7 +85,7 @@ namespace HandicapTracker.ViewModels
                 SlopeRating = SlopeRating
             };
 
-            await DataStore.AddItemAsync(newScore);
+            await DataStore.AddScoreAsync(newScore);
 
             // This will pop the current page off the navigation stack
             await Navigation.GoBackAsync();

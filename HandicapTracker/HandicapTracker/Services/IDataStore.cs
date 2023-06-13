@@ -7,8 +7,8 @@ namespace HandicapTracker.Services
 {
     public interface IDataStore<T>
     {
-        Task<bool> AddItemAsync(T score);
-        Task AddItemAsync(Score newScore);
+        Task<bool> AddScoreAsync(T score);
+        Task AddScoreAsync(Score newScore);
 
         //Task<bool> UpdateItemAsync(T item);
 

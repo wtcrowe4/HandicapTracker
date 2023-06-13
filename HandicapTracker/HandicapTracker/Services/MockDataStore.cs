@@ -26,14 +26,14 @@ namespace HandicapTracker.Services
 
         //    return await Task.FromResult(true);
         //}
-        public async Task<bool> AddItemAsync(Score score)
+        public async Task<bool> AddScoreAsync(Score score)
         {
             this.scores.Add(score);
 
             return await Task.FromResult(true);
         }
 
-        Task IDataStore<Score>.AddItemAsync(Score newScore)
+        Task IDataStore<Score>.AddScoreAsync(Score newScore)
         {
             throw new NotImplementedException();
         }

@@ -8,7 +8,7 @@ namespace HandicapTracker.ViewModels
         public ChartsViewModel()
         {
             Title = "ChartsView";
-            Items = new ObservableCollection<Item>();
+            //Items = new ObservableCollection<Item>();
             LoadData();
         }
 
@@ -21,12 +21,12 @@ namespace HandicapTracker.ViewModels
 
         async void LoadData()
         {
-            IEnumerable<Item> items = await DataStore.GetItemsAsync(true);
-            Items.Clear();
-            foreach (Item item in items)
-            {
-                Items.Add(item);
-            }
+            //IEnumerable<Item> items = await DataStore.GetItemsAsync(true);
+            //Items.Clear();
+            //foreach (Item item in items)
+            //{
+            //    Items.Add(item);
+            //}
         }
     }
 }
