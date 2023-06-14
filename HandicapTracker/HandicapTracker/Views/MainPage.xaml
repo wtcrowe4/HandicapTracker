@@ -13,6 +13,8 @@
 
     <ShellContent Title="Home" Icon="home"
                   ContentTemplate="{DataTemplate local:HomePage}" />
+    <ShellContent Title="New Score" Icon="popup"
+                  ContentTemplate="{DataTemplate local:InputScorePage}" />
 
     <ShellContent Title="About" Icon="about"
                   ContentTemplate="{DataTemplate local:AboutPage}"

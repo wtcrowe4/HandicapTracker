@@ -3,12 +3,17 @@
 namespace HandicapTracker.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NewItemPage : ContentPage
+    public partial class InputScorePage : ContentPage
     {
-        public NewItemPage()
+        public InputScorePage()
         {
             InitializeComponent();
             BindingContext = new InputScoreViewModel();
+        }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
         }
     }
 }
