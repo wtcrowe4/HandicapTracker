@@ -4,7 +4,6 @@
              xmlns:dxcv="clr-namespace:DevExpress.Maui.CollectionView;assembly=DevExpress.Maui.CollectionView"
              xmlns:local="clr-namespace:HandicapTracker.ViewModels"
              xmlns:model="clr-namespace:HandicapTracker.Models"
-             xmlns:templates="clr-namespace:HandicapTracker.Views.Templates"
              Title="{Binding Title}"
              IconImageSource="browse"
              BackgroundColor="{StaticResource NormalBackgroundColor}"
@@ -12,11 +11,11 @@
              ios:Page.UseSafeArea="true"
              x:Class="HandicapTracker.Views.ItemsPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="ADD" Command="{Binding AddItemCommand}" />
+        <!--<ToolbarItem Text="ADD" Command="{Binding AddItemCommand}" />-->
     </ContentPage.ToolbarItems>
     <Grid RowDefinitions="Auto, *">
-        <dxcv:DXCollectionView x:Name="ItemsListView" Grid.Row="2"
-            ItemsSource="{Binding Items}"
+        <!--<dxcv:DXCollectionView x:Name="ItemsListView" Grid.Row="2"
+            ItemsSource="{Binding Scores}"
                 SelectionMode="None" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
             <dxcv:DXCollectionView.ItemTemplate>
                     <DataTemplate>
@@ -45,6 +44,6 @@
                         </Grid>
                     </DataTemplate>
                 </dxcv:DXCollectionView.ItemTemplate>
-            </dxcv:DXCollectionView>
+            </dxcv:DXCollectionView>-->
     </Grid>
 </ContentPage>

@@ -9,6 +9,9 @@ namespace HandicapTracker.Services
     {
         Task<bool> AddScoreAsync(T score);
         Task AddScoreAsync(Score newScore);
+        Task<IEnumerable<T>> GetScoresAsync(bool forceRefresh = false);
+
+        //Task<bool> AddItemAsync(T item);
 
         //Task<bool> UpdateItemAsync(T item);
 

@@ -16,7 +16,7 @@ namespace HandicapTracker.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            ViewModel.OnAppearing();
+            //ViewModel.OnAppearing();
         }
     }
 }

@@ -5,7 +5,7 @@ namespace HandicapTracker.Services
     public class MockDataStore : IDataStore<Score>
     {
         //readonly List<Item> items;
-        readonly List<Score> scores;
+        public List<Score> scores;
 
         public MockDataStore()
         {
@@ -20,12 +20,7 @@ namespace HandicapTracker.Services
             //};
         }
 
-        //public async Task<bool> AddItemAsync(Item item)
-        //{
-        //    this.items.Add(item);
-
-        //    return await Task.FromResult(true);
-        //}
+        
         public async Task<bool> AddScoreAsync(Score score)
         {
             this.scores.Add(score);
@@ -37,6 +32,18 @@ namespace HandicapTracker.Services
         {
             throw new NotImplementedException();
         }
+
+        public async Task<IEnumerable<Score>> GetScoresAsync(bool forceRefresh = false)
+        {
+            return await Task.FromResult(this.scores);
+        }
+
+        //public async Task<bool> AddItemAsync(Item item)
+        //{
+        //    this.items.Add(item);
+
+        //    return await Task.FromResult(true);
+        //}
 
         //public async Task<bool> UpdateItemAsync(Item item)
         //{

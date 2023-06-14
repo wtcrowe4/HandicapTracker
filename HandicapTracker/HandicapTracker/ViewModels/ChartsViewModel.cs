@@ -12,7 +12,8 @@ namespace HandicapTracker.ViewModels
             LoadData();
         }
 
-        public ObservableCollection<Item> Items { get; private set; }
+        //public ObservableCollection<Item> Items { get; private set; }
+        public ObservableCollection<Score> Scores { get; private set; }
 
         public void OnAppearing()
         {
@@ -27,6 +28,13 @@ namespace HandicapTracker.ViewModels
             //{
             //    Items.Add(item);
             //}
+
+            IEnumerable<Score> scores = await DataStore.GetScoresAsync(true) as IEnumerable<Score>;
+            Scores.Clear();
+            foreach (Score score in scores)
+            {
+                Scores.Add(score);
+            }
         }
     }
 }

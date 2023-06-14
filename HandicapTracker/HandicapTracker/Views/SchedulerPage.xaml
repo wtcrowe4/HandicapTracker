@@ -12,7 +12,7 @@
         <dxsch:DayView x:Name="dayView">
             <dxsch:DayView.DataStorage>
                 <dxsch:SchedulerDataStorage>
-                    <dxsch:SchedulerDataStorage.DataSource>
+                    <!--<dxsch:SchedulerDataStorage.DataSource>
                         <dxsch:DataSource AppointmentsSource="{Binding Items}">
                             <dxsch:DataSource.AppointmentMappings>
                                 <dxsch:AppointmentMappings 
@@ -23,7 +23,7 @@
                                     />      
                             </dxsch:DataSource.AppointmentMappings>
                         </dxsch:DataSource>
-                    </dxsch:SchedulerDataStorage.DataSource>
+                    </dxsch:SchedulerDataStorage.DataSource>-->
                 </dxsch:SchedulerDataStorage>
             </dxsch:DayView.DataStorage>
         </dxsch:DayView>
