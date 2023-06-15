@@ -13,8 +13,10 @@
 
     <ShellContent Title="Home" Icon="home"
                   ContentTemplate="{DataTemplate local:HomePage}" />
+    
     <ShellContent Title="New Score" Icon="popup"
-                  ContentTemplate="{DataTemplate local:InputScorePage}" />
+                  ContentTemplate="{DataTemplate local:InputScorePage}"
+                  Route="HandicapTracker.Views.InputScoresPage"  />
 
     <ShellContent Title="About" Icon="about"
                   ContentTemplate="{DataTemplate local:AboutPage}"
