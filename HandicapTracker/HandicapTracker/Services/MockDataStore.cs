@@ -18,6 +18,16 @@ namespace HandicapTracker.Services
             //    new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description.", StartTime = baseDate.AddHours(9), EndTime = baseDate.AddHours(12), Value=3.287 },
             //    new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description.", StartTime = baseDate.AddHours(12), EndTime = baseDate.AddHours(15), Value=81.2 }
             //};
+
+            DateTime baseDate = DateTime.Today;
+            this.scores = new List<Score>()
+            {
+                new Score { Id = Guid.NewGuid().ToString(), Value = 74, Date = baseDate.AddDays(-1), CourseRating = 71.2, SlopeRating = 120 },
+                new Score { Id = Guid.NewGuid().ToString(), Value = 72, Date = baseDate.AddDays(-2), CourseRating = 71.2, SlopeRating = 120 },
+                new Score { Id = Guid.NewGuid().ToString(), Value = 75, Date = baseDate.AddDays(-3), CourseRating = 71.2, SlopeRating = 120 },
+                new Score { Id = Guid.NewGuid().ToString(), Value = 70, Date = baseDate.AddDays(-4), CourseRating = 71.2, SlopeRating = 120 },
+                new Score { Id = Guid.NewGuid().ToString(), Value = 71, Date = baseDate.AddDays(-5), CourseRating = 71.2, SlopeRating = 120 },
+            };
         }
 
         
