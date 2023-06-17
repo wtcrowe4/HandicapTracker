@@ -61,10 +61,10 @@ namespace HandicapTracker.ViewModels
         [DataFormDisplayOptions(IsVisible = false)]
         public Command CancelCommand { get; }
 
-        internal void OnAppearing()
-        {
-            throw new NotImplementedException();
-        }
+        //internal void OnAppearing()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
 
         //bool ValidateSave()

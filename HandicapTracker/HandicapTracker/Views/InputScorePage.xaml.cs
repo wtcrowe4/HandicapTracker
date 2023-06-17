@@ -7,20 +7,17 @@ namespace HandicapTracker.Views
     {
         public InputScorePage()
         {
-            InitializeComponent();
+            //InitializeComponent();
             BindingContext = new InputScoreViewModel();
         }
 
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            ((InputScoreViewModel)BindingContext).OnAppearing();
-        }
+        //protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    ((InputScoreViewModel)BindingContext).OnAppearing();
+        //}
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
+        //private void InitializeComponent() => throw new NotImplementedException();
 
     }
 }
