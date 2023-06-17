@@ -11,9 +11,16 @@ namespace HandicapTracker.Views
             BindingContext = new InputScoreViewModel();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            ((InputScoreViewModel)BindingContext).OnAppearing();
+        }
+
         private void InitializeComponent()
         {
             throw new NotImplementedException();
         }
+
     }
 }
